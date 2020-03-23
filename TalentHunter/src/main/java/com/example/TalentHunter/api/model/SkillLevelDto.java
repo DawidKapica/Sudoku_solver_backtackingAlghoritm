@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 @Data
@@ -14,7 +16,9 @@ public class SkillLevelDto extends BaseDto<Long> {
 
 
     @NotNull
-    private int level;
+    @Max(4)
+    @Min(3)
+    private Integer level;
 
     @NotNull
     private Long employeeId;
