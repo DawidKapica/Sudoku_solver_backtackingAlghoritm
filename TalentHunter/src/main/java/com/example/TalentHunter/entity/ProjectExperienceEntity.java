@@ -1,6 +1,5 @@
-package com.example.TalentHunter.repository.entity;
+package com.example.TalentHunter.entity;
 
-import com.example.TalentHunter.api.model.SkillCategoryDto;
 import com.example.TalentHunter.coreLibrary.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,18 +13,17 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "skill")
+@Table(name = "project_experience")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SkillEntity extends BaseEntity<Long> {
-
-    @NotNull
-    @Size(min = 1, max = 255)
-    private String name;
+public class ProjectExperienceEntity extends BaseEntity<Long> {
 
     @ManyToOne
+    @JoinColumn(name = "employee_id")
+    private EmployeeEntity employee_id;
+
+    @Size(min = 1, max = 255)
     @NotNull
-    @JoinColumn(name = "skillCategory_id")
-    private SkillCategoryEntity skillCategory_id;
+    private String name;
 }

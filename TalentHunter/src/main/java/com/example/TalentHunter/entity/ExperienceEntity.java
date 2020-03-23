@@ -1,4 +1,4 @@
-package com.example.TalentHunter.repository.entity;
+package com.example.TalentHunter.entity;
 
 import com.example.TalentHunter.coreLibrary.BaseEntity;
 import lombok.AllArgsConstructor;

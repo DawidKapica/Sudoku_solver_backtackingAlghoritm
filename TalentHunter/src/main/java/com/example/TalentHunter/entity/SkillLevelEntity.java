@@ -1,4 +1,4 @@
-package com.example.TalentHunter.repository.entity;
+package com.example.TalentHunter.entity;
 
 import com.example.TalentHunter.coreLibrary.BaseEntity;
 import lombok.AllArgsConstructor;
@@ -9,21 +9,29 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "project_experience")
+@Table(name = "skill_level")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProjectExperienceEntity extends BaseEntity<Long> {
+public class SkillLevelEntity extends BaseEntity<Long> {
+
+    @NotNull
+    @Max(4)
+    @Min(3)
+    private Integer level;
 
     @ManyToOne
+    @NotNull
     @JoinColumn(name = "employee_id")
     private EmployeeEntity employee_id;
 
-    @Size(min = 1, max = 255)
+    @ManyToOne
     @NotNull
-    private String name;
+    @JoinColumn(name = "skill_id")
+    private SkillEntity skill_id;
 }
