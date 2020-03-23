@@ -2,6 +2,7 @@ package com.example.TalentHunter.services.servicesImpl;
 
 import com.example.TalentHunter.api.model.EmployeeDto;
 import com.example.TalentHunter.api.model.SkillDto;
+import com.example.TalentHunter.coreLibrary.BaseMapper;
 import com.example.TalentHunter.coreLibrary.BaseRepository;
 import com.example.TalentHunter.coreLibrary.BaseServiceImpl;
 import com.example.TalentHunter.entity.ContactEntity;

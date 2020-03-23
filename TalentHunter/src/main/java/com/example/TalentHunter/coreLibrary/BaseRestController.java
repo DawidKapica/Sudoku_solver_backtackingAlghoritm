@@ -1,6 +1,5 @@
 package com.example.TalentHunter.coreLibrary;
 
-import com.searchapp.rest.RestMappings;
 import lombok.RequiredArgsConstructor;
 import org.apache.poi.ss.formula.functions.T;
 import org.springframework.beans.factory.annotation.Autowired;

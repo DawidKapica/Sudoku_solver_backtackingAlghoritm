@@ -1,6 +1,5 @@
 package com.example.TalentHunter.coreLibrary;
 
-import com.searchapp.entity.RegionEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
