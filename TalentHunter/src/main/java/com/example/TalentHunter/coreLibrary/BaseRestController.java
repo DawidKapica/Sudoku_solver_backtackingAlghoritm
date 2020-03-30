@@ -87,11 +87,11 @@ public abstract class BaseRestController<T extends BaseDto, U, K extends Seriali
                 .findById(id);
     }
 
-//    @GetMapping
-//    public List<T> getAll() {
-//    return service
-//            .findAll();
-//    }
+    @GetMapping
+    public List<T> getAll() {
+    return service
+            .findAll();
+    }
 
     @GetMapping
     public Page<T> getAll(Pageable pageable) {
