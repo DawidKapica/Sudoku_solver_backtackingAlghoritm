@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 @Entity
 @Table(name = "employee")
@@ -24,4 +25,8 @@ public class EmployeeEntity extends BaseEntity<Long> {
     @NotNull
     @JoinColumn(name = "region_id")
     private RegionEntity region_id;
+
+    @Column(name = "birthday")
+    Date birthday;
+
 }

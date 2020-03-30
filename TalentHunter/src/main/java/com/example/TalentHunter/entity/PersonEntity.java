@@ -21,7 +21,7 @@ public class PersonEntity extends BaseEntity<Long> {
 
     @NotNull
     @Size(min = 1, max = 255)
-    private String name;
+    private String firstName;
 
     @NotNull
     @Size(min = 1, max = 255)
