@@ -13,13 +13,18 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 public class EmployeeDto extends BaseDto<Long> {
 
-    @NotNull
-    @Size(min = 1, max = 255)
-    private String name;
+//    @NotNull
+//    @Size(min = 1, max = 255)
+//    private String name;
+//
+//    @NotNull
+//    @Size(min = 1, max = 255)
+//    private String lastName;
 
     @NotNull
-    @Size(min = 1, max = 255)
-    private String lastName;
+    PersonDto personDto;
 
-    private Long contactId;
+    @NotNull
+    RegionDto regionDto;
+
 }

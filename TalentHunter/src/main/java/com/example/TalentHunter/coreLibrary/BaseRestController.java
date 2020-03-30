@@ -81,7 +81,7 @@ public abstract class BaseRestController<T extends BaseDto, U, K extends Seriali
         return responseDto;
     }
 
-    @GetMapping(RestMappings.ID)
+    @GetMapping("/get")
     public Optional<T> getById(@RequestParam K id) {
         return service
                 .findById(id);
