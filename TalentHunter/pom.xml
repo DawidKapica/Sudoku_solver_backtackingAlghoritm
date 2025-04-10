@@ -21,7 +21,7 @@
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<hibernate-jpamodelgen.version>5.4.4.Final</hibernate-jpamodelgen.version>
 		<specification-arg-resolver.version>2.1.1</specification-arg-resolver.version>
-		<poi-ooxml.version>4.1.0</poi-ooxml.version>
+		<poi-ooxml.version>5.4.0</poi-ooxml.version>
 
 	</properties>
 
